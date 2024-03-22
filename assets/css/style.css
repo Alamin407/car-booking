@@ -1,0 +1,972 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+.wpt-bookin-wrapper {
+  width: 100%;
+}
+.wpt-bookin-wrapper .frm-head {
+  width: 100%;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.wpt-bookin-wrapper .frm-head h3 {
+  color: #191919;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+.wpt-bookin-wrapper #msform {
+  position: relative;
+}
+.wpt-bookin-wrapper #msform .info-box {
+  width: 100%;
+}
+.wpt-bookin-wrapper #msform .info-box h4 {
+  color: #191919;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+.wpt-bookin-wrapper #msform .info-box .error {
+  display: none;
+  font-size: 16px;
+}
+.wpt-bookin-wrapper #msform .info-box .wpt-info-item .info-left {
+  margin-right: 40px;
+  margin-left: 22px;
+}
+.wpt-bookin-wrapper #msform .info-box .wpt-info-item label {
+  color: #474747;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  cursor: pointer;
+}
+.wpt-bookin-wrapper #msform .info-box .wpt-info-item input {
+  position: relative;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.wpt-bookin-wrapper #msform .info-box .wpt-info-item input::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -20px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #474747;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.wpt-bookin-wrapper #msform .info-box .wpt-info-item input:checked::before {
+  background: #474747;
+}
+.wpt-bookin-wrapper #msform .info-box .wpt-info-item input::after {
+  content: "\f00c";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: -14px;
+  left: -17px;
+  font-size: 12px;
+  display: none;
+}
+.wpt-bookin-wrapper #msform .info-box .wpt-info-item input:checked::after {
+  display: block;
+  color: #fff;
+}
+.wpt-bookin-wrapper #msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+.wpt-bookin-wrapper #msform .wpt-client-form{
+  display: none;
+}
+.wpt-bookin-wrapper #msform .form-card .form-group {
+  position: relative;
+}
+.wpt-bookin-wrapper #msform .form-card .form-group .wpt-error {
+  width: 150px;
+  position: absolute;
+  padding: 5px 10px;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  background: #191919;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 2px 5px 10px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  bottom: -42px;
+  display: none;
+}
+.wpt-bookin-wrapper #msform .form-card .form-group .wpt-error::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  border: solid 5px;
+  border-color: transparent transparent #191919 transparent;
+}
+.wpt-bookin-wrapper #msform .form-card h3 {
+  color: #191919;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+.wpt-bookin-wrapper #msform .form-card label {
+  display: block;
+  color: #474747;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 12px;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-form-control {
+  display: block;
+  width: 100%;
+  padding: 15px 16px;
+  color: #A3A3A3;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  border-radius: 8px;
+  border: 1px solid #E8E8E8;
+  background: #fff;
+  outline: 0;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-form-control:focus {
+  border-color: #191919;
+}
+.wpt-bookin-wrapper #msform .form-card .iti {
+  width: 100%;
+}
+.wpt-bookin-wrapper #msform .form-card .iti .wpt-form-control {
+  padding-left: 50px;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-slc-pref {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-slc-pref h4 {
+  color: #474747;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-select-wrap {
+  width: 100%;
+  position: relative;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-select-wrap .select-text {
+  width: 150px;
+  padding: 15px 16px;
+  background: #fff;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-select-wrap .select-text span {
+  color: #A3A3A3;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-select-wrap .select-text .drop-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-select-wrap .default-wrap {
+  display: none;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 150px;
+  background: #fff;
+  border: 1px solid #E8E8E8;
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+  list-style: none;
+  z-index: 99;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-select-wrap .default-wrap li {
+  padding: 15px 16px;
+  color: #A3A3A3;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-select-wrap .default-wrap li:hover {
+  background: #E8E8E8;
+  color: #191919;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-select-wrap .show {
+  display: block;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-remove, .wpt-bookin-wrapper #msform .form-card .wpt-cld-rm {
+  display: inline-block;
+  text-decoration: none;
+  color: #B11818;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  padding: 15px 24px;
+  background: #fff;
+  border: 1px solid #B11818;
+  border-radius: 8px;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-remove:hover, .wpt-bookin-wrapper #msform .form-card .wpt-cld-rm:hover {
+  background: #B11818;
+  color: #fff;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-trip {
+  width: 100%;
+  display: flex;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-trip .trip-label {
+  width: 122px;
+  padding: 12px;
+  border: 1px solid;
+  border-color: #191919 #191919 #191919 #191919;
+  cursor: pointer;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-trip .trip-label.transfer {
+  border-right: transparent;
+  border-radius: 4px 0 0 4px;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-trip .trip-label.hourly {
+  border-left: transparent;
+  border-radius: 0 4px 4px 0;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-trip .trip-active {
+  background: #191919;
+  color: #fff;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-trip input {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  display: none;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pic-from {
+  width: 100%;
+  display: flex;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pic-from label {
+  margin-right: 24px;
+  position: relative;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pic-from label:last-child {
+  margin-right: 0;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pic-from label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #474747;
+  border-radius: 3px;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pic-from label .icon {
+  display: none;
+  position: absolute;
+  top: -1px;
+  left: -16px;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pic-from label .icon i {
+  font-size: 11px;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pic-from label input {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pic-from .pic-active::before {
+  background: #474747;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pic-from .pic-active .icon {
+  display: block;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pic-from .pic-active .icon i {
+  color: #fff !important;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pick-flight-wrap {
+  width: 100%;
+  position: relative;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pick-flight-wrap .wpt-selected {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #A3A3A3;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  padding: 15px 16px;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pick-flight-wrap .flight-list {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: -145px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+  z-index: 99;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pick-flight-wrap .flight-list .flight-list-item {
+  color: #A3A3A3;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pick-flight-wrap .flight-list .flight-list-item:hover {
+  background: #E8E8E8;
+  color: #191919;
+}
+.wpt-bookin-wrapper #msform .form-card .wpt-pick-flight-wrap .flight-show {
+  display: block;
+}
+.wpt-bookin-wrapper #msform .return-wrap {
+  width: 100%;
+}
+.wpt-bookin-wrapper #msform .return-wrap h3 {
+  color: #191919;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+.wpt-bookin-wrapper #msform .return-wrap .return-item {
+  width: 100%;
+  display: flex;
+}
+.wpt-bookin-wrapper #msform .return-wrap .return-item label {
+  margin-right: 24px;
+  position: relative;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.wpt-bookin-wrapper #msform .return-wrap .return-item label:last-child {
+  margin-right: 0;
+}
+.wpt-bookin-wrapper #msform .return-wrap .return-item label::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #474747;
+  border-radius: 3px;
+}
+.wpt-bookin-wrapper #msform .return-wrap .return-item label .icon {
+  display: none;
+  position: absolute;
+  top: -1px;
+  left: -16px;
+}
+.wpt-bookin-wrapper #msform .return-wrap .return-item label .icon i {
+  font-size: 11px;
+}
+.wpt-bookin-wrapper #msform .return-wrap .return-item label input {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+}
+.wpt-bookin-wrapper #msform .return-wrap .return-item .return-active::before {
+  background: #474747;
+}
+.wpt-bookin-wrapper #msform .return-wrap .return-item .return-active .icon {
+  display: block;
+}
+.wpt-bookin-wrapper #msform .return-wrap .return-item .return-active .icon i {
+  color: #fff !important;
+}
+.wpt-bookin-wrapper #msform #wpt-return-card {
+  display: none;
+}
+.wpt-bookin-wrapper #msform .wpt-add-more {
+  width: 100%;
+}
+.wpt-bookin-wrapper #msform .wpt-add-more .wpt-more-wrap {
+  width: 100%;
+}
+.wpt-bookin-wrapper #msform .wpt-add-more .wpt-more-wrap .wpt-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #757575;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  padding: 15px 24px;
+  background: #fff;
+  border: 1px solid #757575;
+  border-radius: 8px;
+}
+.wpt-bookin-wrapper #msform .wpt-add-more .wpt-more-wrap .wpt-btn:hover {
+  background: #191919;
+  color: #fff;
+  border-color: #191919;
+}
+.wpt-bookin-wrapper #msform .wpt-pick-extra {
+  width: 100%;
+}
+.wpt-bookin-wrapper #msform .wpt-pick-extra .wpt-pick-wrap {
+  width: 100%;
+  display: flex;
+}
+.wpt-bookin-wrapper #msform .wpt-pick-extra .wpt-pick-wrap .wpt-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #757575;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  padding: 15px 24px;
+  background: #fff;
+  border: 1px solid #757575;
+  border-radius: 8px;
+}
+.wpt-bookin-wrapper #msform .wpt-pick-extra .wpt-pick-wrap .wpt-btn:hover {
+  background: #191919;
+  color: #fff;
+  border-color: #191919;
+}
+.wpt-bookin-wrapper #msform .wpt-pick-extra .wpt-pick-wrap .wpt-pick-note {
+  margin-right: 24px;
+}
+.wpt-bookin-wrapper #msform .footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wpt-bookin-wrapper #msform .footer .left-btn {
+  display: flex;
+}
+.wpt-bookin-wrapper #msform .footer .left-btn .previous {
+  margin-right: 16px;
+}
+.wpt-bookin-wrapper #msform .footer .right-btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.wpt-bookin-wrapper #msform .footer .wpt-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 18px 32px;
+  background: #303030;
+  border-radius: 12px;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  cursor: pointer;
+}
+.wpt-bookin-wrapper #msform .footer .wpt-reg-btn {
+  background: transparent;
+  border: 1px solid #303030;
+  color: #303030;
+  transition: 0.3s all ease-in-out;
+}
+.wpt-bookin-wrapper #msform .footer .wpt-reg-btn:hover {
+  background: #303030;
+  color: #fff;
+}
+.wpt-bookin-wrapper #msform fieldset:not(:first-of-type) {
+  display: none;
+}
+.wpt-bookin-wrapper #msform #progressbar {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wpt-bookin-wrapper #msform #progressbar li {
+  display: flex;
+}
+.wpt-bookin-wrapper #msform #progressbar li span {
+  color: #A3A3A3;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wpt-bookin-wrapper #msform #progressbar li .num {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #A3A3A3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  margin-right: 8px;
+}
+.wpt-bookin-wrapper #msform #progressbar li .icon {
+  margin-left: 20px;
+}
+.wpt-bookin-wrapper #msform #progressbar .active span {
+  color: #191919;
+}
+.wpt-bookin-wrapper #msform #progressbar .active .num {
+  background: #191919;
+  color: #fff;
+}
+
+.help {
+  width: 100%;
+}
+.help .card {
+  border-radius: 16px;
+}
+.help .card .card-header {
+  padding: 16px;
+  background: #191919;
+  border-radius: 16px 16px 0 0;
+}
+.help .card .card-header h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+}
+.help .card .card-body {
+  padding: 16px;
+}
+.help .card .card-body .wpt-icon-list {
+  width: 100%;
+}
+.help .card .card-body .wpt-icon-list .wpt-icon-item {
+  width: 100%;
+  display: flex;
+  margin-bottom: 16px;
+}
+.help .card .card-body .wpt-icon-list .wpt-icon-item:last-child {
+  margin-bottom: 0;
+}
+.help .card .card-body .wpt-icon-list .wpt-icon-item .icon span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #191919;
+}
+.help .card .card-body .wpt-icon-list .wpt-icon-item .title {
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+}
+.help .card .card-body .wpt-icon-list .wpt-icon-item .title h4 {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #474747;
+}
+.wpt-cartab-wrap{
+  width: 100%;
+}
+.wpt-cartab-wrap .wpt-car-tab{
+  width: 100%;
+}
+.wpt-cartab-wrap .wpt-car-tab .wpt-tab-list{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+.wpt-cartab-wrap .wpt-car-tab .wpt-tab-list .wpt-tab-list-item{
+  padding: 14px 24px;
+  width: 160px;
+  color: #5E5E5E;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  border: 2px solid #5E5E5E;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+.wpt-cartab-wrap .wpt-car-tab .wpt-tab-list .wpt-tab-active{
+  background: #191919;
+  border-color: #191919;
+  color: #fff;
+}
+.wpt-cartab-wrap .wpt-tab-content-area{
+  width: 100%;
+  padding-top: 56px;
+  display: none;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide{
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #E8E8E8;
+  background: #FFF;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-gallery{
+  margin-top: 56px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-gallery{
+  display: flex;
+  gap: 12px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-gal-item{
+  width: 91px;
+  height: 91px;
+  border-radius: 12px;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  cursor: pointer;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-gal-item img{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide h2{
+  color: #303030;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide p{
+  color: #474747;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-info{
+  width: 100%;
+  margin-bottom: 16px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-info .wpt-car-info-list{
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-info .wpt-car-info-list .wpt-car-info-item{
+  position: relative;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-info .wpt-car-info-list .wpt-car-info-item::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -11px;
+  width: 6px;
+  height: 6px;
+  background: #474747;
+  border-radius: 50%;
+  transform: translateY(-30%);
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-info .wpt-car-info-list .wpt-car-info-item:first-child::before{
+  display: none;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-info .wpt-car-info-list .wpt-car-info-item span{
+  color: #474747;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-colors{
+  width: 100%;
+  margin-bottom: 16px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-colors h3, .wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-rims h3, .wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-perform h3{
+  color: #303030;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-colors .wpt-car-color-list{
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-colors .wpt-car-color-list .wpt-car-color-item{
+  position: relative;
+  cursor: pointer;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-colors .wpt-car-color-list .wpt-car-color-item .color-code{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-colors .wpt-car-color-list .wpt-car-color-item .color-name{
+  display: inline-block;
+  width: 80px;
+  padding: 5px 12px;
+  background: #191919;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease-in-out;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-colors .wpt-car-color-list .wpt-car-color-item .color-name::before{
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 5px solid;
+  border-color: #191919 transparent transparent transparent;
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-colors .wpt-car-color-list .wpt-car-color-item:hover .color-name{
+  opacity: 1;
+  visibility: visible;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-rims{
+  width: 100%;
+  margin-bottom: 16px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-rims .wpt-rims-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-rims .wpt-rims-list .wpt-rim-item{
+  margin-bottom: 8px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-rims .wpt-rims-list .wpt-rim-item:first-child{
+  margin-bottom: 0;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-rims .wpt-rims-list .wpt-rim-item span{
+  color: #474747;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-rims .wpt-rims-list .wpt-rim-item span i{
+  font-size: 16px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-perform{
+  width: 100%;
+  margin-bottom: 16px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-perform .wpt-car-perfom-list{
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-perform .wpt-car-perfom-list .wpt-perform-item h3{
+  color: #474747;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14.4px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-perform .wpt-car-perfom-list .wpt-perform-item h4{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-perform .wpt-car-perfom-list .wpt-perform-item h4 .num{
+  color: #303030;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-perform .wpt-car-perfom-list .wpt-perform-item h4 .des{
+  color: #303030;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.woocommerce-js a.button {
+  padding: 10px 32px;
+  color: #FFF;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  border-radius: 12px;
+  background: #191919;
+}
+.woocommerce-js a.button:hover{
+  background: #191919;
+}
+a.added_to_cart.wc-forward {
+  display: none !important;
+}
+
+@media (max-width: 1200px) {
+  .wpt-bookin-wrapper #msform #progressbar li .icon {
+    margin-left: 6px;
+  }
+}
+@media (max-width: 968px) {
+  .wpt-bookin-wrapper #msform #progressbar {
+    flex-wrap: wrap;
+  }
+  .wpt-bookin-wrapper #msform #progressbar li {
+    margin-bottom: 10px;
+  }
+  .wpt-bookin-wrapper #msform #progressbar li .icon {
+    margin-left: 6px;
+  }
+  .wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-gal-item{
+    width: 167px;
+  }
+}
+@media (max-width: 768px) {
+  .wpt-bookin-wrapper #msform #progressbar li {
+    width: 33.33%;
+  }
+  .wpt-bookin-wrapper #msform #progressbar li .icon {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .wpt-bookin-wrapper #msform .footer .wpt-btn {
+    padding: 12px 15px;
+  }
+  .wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-info .wpt-car-info-list{
+    flex-wrap: wrap;
+    padding-left: 12px;
+  }
+  .wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-info .wpt-car-info-list .wpt-car-info-item{
+    width: 100%;
+  }
+  .wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-info .wpt-car-info-list .wpt-car-info-item:first-child::before{
+    display: block;
+  }
+  .wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-perform .wpt-car-perfom-list{
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-perform .wpt-car-perfom-list .wpt-perform-item{
+    width: 100%;
+  }
+  .wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-perform .wpt-car-perfom-list .wpt-perform-item h3{
+    text-align: left;
+  }
+  .wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-perform .wpt-car-perfom-list .wpt-perform-item h4{
+    justify-content: flex-start;
+  }
+  .wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-gal-item{
+    width: 91px;
+  }
+}
+@media (max-width: 430px) {
+  .wpt-bookin-wrapper #msform #progressbar li {
+    width: 50%;
+  }
+  .wpt-cartab-wrap .wpt-car-tab .wpt-tab-list{
+    flex-wrap: wrap;
+  }
+  .wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide{
+    padding: 20px;
+  }
+  .wpt-cartab-wrap .wpt-tab-content-area .wpt-car-slide .wpt-car-gallery{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 390px) {
+  .wpt-bookin-wrapper #msform #progressbar li {
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .wpt-bookin-wrapper #msform .form-card .wpt-pic-from label {
+    margin-right: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

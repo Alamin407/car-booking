@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300..700&display=swap');
+
+.wpt-admin-table th{
+    font-family: "Pontano Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #191919;
+}
+.wpt-admin-table td, .wpt-admin-table td p{
+    font-family: "Pontano Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #191919;
+}
+.wpt-admin-pagination .tablenav .page-numbers{
+    padding: 8px 13px;
+    border: 1px solid #0D6AF4;
+    border-radius: 3px;
+    font-family: "Pontano Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #191919;
+    text-decoration: none;
+}
+.wpt-admin-pagination .tablenav .page-numbers:hover{
+    background: #0D6AF4;
+    color: #fff;
+}
+.wpt-admin-pagination .tablenav .page-numbers.current{
+    background: #0D6AF4;
+    color: #fff;
+}
+.wpt-admin-pagination .tablenav span[aria-current="page"]{
+    background: #0D6AF4;
+    color: #fff;
+}
+.wpt-shortcode-wrap{
+    width: 100%;
+    padding: 50px 30px;
+}
+.wpt-shortcode-wrap h2{
+    font-family: "Pontano Sans", sans-serif;
+    font-size: 58px;
+    font-weight: 500;
+    color: #191919;
+    margin-bottom: 20px;
+}
+.wpt-shortcode-wrap .wpt-shortcode-box{
+    width: 400px;
+    padding: 30px;
+    border:  1px solid #0D6AF4;
+    border-radius: 12px;
+}
+.wpt-shortcode-wrap .wpt-shortcode-box .clipboard{
+    padding: 10px 20px;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.wpt-shortcode-wrap .wpt-shortcode-box .clipboard input{
+    background: transparent;
+    border: none;
+    font-family: "Pontano Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #191919;
+    outline: 0;
+}
+.wpt-shortcode-wrap .wpt-shortcode-box .clipboard .copy-btn{
+    border: none;
+    outline: 0;
+    background: transparent;
+}
+.wpt-shortcode-wrap .wpt-shortcode-box .clipboard .copy-btn i{
+    font-size: 20px;
+    color: #0D6AF4;
+}
+.copied{
+    display: none;
+    color: #2ecc71;
+    font-family: "Pontano Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
